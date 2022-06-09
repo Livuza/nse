@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import datetime
 from datetime import datetime, date, time
 st.set_page_config(
-    page_title="Nairobi Stock Exchange",
+    page_title="Nairobi Stock Exchange Market",
     page_icon="✅",
     layout="wide",
     initial_sidebar_state="auto",
