@@ -8,7 +8,7 @@ import plotly.express as px
 import datetime
 from datetime import datetime, date, time
 st.set_page_config(
-    page_title="Nairobi Stock Exchange Market",
+    page_title="Nairobi Stock Exchange",
     page_icon="✅",
     layout="wide",
     initial_sidebar_state="auto",
