@@ -1,6 +1,7 @@
 from contextlib import closing
 import time
 import streamlit as st
+import yfinance as yf
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
