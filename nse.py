@@ -5,6 +5,7 @@ import pandas as pd
 import yfinance as yf
 import numpy as np
 import plotly.express as px
+import matplotlib.pyplot as plt
 import datetime
 from datetime import datetime, date, time
 st.set_page_config(
