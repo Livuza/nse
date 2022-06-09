@@ -1,7 +1,6 @@
 from contextlib import closing
 import time
 import streamlit as st
-import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 import numpy as np
