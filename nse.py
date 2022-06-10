@@ -15,12 +15,11 @@ st.set_page_config(
     page_icon="✅",
     layout="wide",
     initial_sidebar_state="auto",
-
 )
 url=("https://raw.githubusercontent.com/regan-mu/ADS-April-2022/main/Assignments/Assignment%201/data.csv")
 df = pd.read_csv(url)
 add_selectbox = st.sidebar.selectbox("Ticker", pd.unique(df["ticker"]))
-df = df[df["ticker"] == add_selectbox]
+#df = df[df["ticker"] == add_selectbox]
 
 #st.markdown('Data Science is **_really_ cool**.')
 
