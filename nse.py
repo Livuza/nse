@@ -26,8 +26,8 @@ st.markdown('Data Science is **_really_ cool**.')
 
 add_start_date = st.sidebar.date_input("Start Date")
 add_end_date = st.sidebar.date_input("End Date")
-#df = df[df["date"] == add_start_date]
-#df = df[df["date"] == add_end_date]
+df = df[df["date"] == add_start_date]
+df = df[df["date"] == add_end_date]
 
 with st.sidebar:
     add_radio = st.radio(
@@ -54,6 +54,7 @@ tickerSymbol = 'GOOGL'
 
 tickerData = yf.Ticker(tickerSymbol)
 add_date = st.sidebar.date_input("Date")
+df = df[df["date"] == add_date]
 tickerDf = tickerData.history(period='id', start='2010-5-31', end='2020-5-31')
 
 st.write("""
