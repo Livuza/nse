@@ -5,6 +5,7 @@ import streamlit as st
 import datetime
 from datetime import datetime, date, time
 import pandas as pd
+import numpy as np
 #import plotly.express as px
 import yfinance as yf
 
