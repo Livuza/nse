@@ -22,18 +22,18 @@ df = pd.read_csv(url)
 add_selectbox = st.sidebar.selectbox("Ticker", pd.unique(df["ticker"]))
 df = df[df["ticker"] == add_selectbox]
 
-st.markdown('Data Science is **_really_ cool**.')
+#st.markdown('Data Science is **_really_ cool**.')
 
 add_start_date = st.sidebar.date_input("Start Date")
 add_end_date = st.sidebar.date_input("End Date")
-df = df[df["date"] == add_start_date]
-df = df[df["date"] == add_end_date]
+#df = df[df["date"] == add_start_date]
+#df = df[df["date"] == add_end_date]
 
-with st.sidebar:
-    add_radio = st.radio(
-        "Price",
-       ("High", "Medium")
-    )
+#with st.sidebar:
+ #   add_radio = st.radio(
+ #       "Price",
+ #      ("High", "Medium")
+ #   )
 st.markdown("#### Nairobi Stock Exchange" )
 fig = px.line(
     data_frame=df, y="price", x="date")
