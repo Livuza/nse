@@ -40,8 +40,7 @@ fig = px.line(
 
 st.write(fig)
 
-st.line_chart(df.date)
-
+st.line_chart(df.price)
 
 
 st.write("""
