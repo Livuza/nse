@@ -1,13 +1,14 @@
 from contextlib import closing
 import time
 import streamlit as st
-import matplotlib.plotly as plt
+from matplotlib import plotly as plt
 import datetime
 from datetime import datetime, date, time
 import pandas as pd
+import seaborn as sns
 import numpy as np
 import plotly.express as px
-#import yfinance as yf
+import yfinance as yf
 
 st.set_page_config(
     page_title="Nairobi Stock Exchange Market",
