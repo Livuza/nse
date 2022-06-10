@@ -35,7 +35,7 @@ with st.sidebar:
        ("High", "Medium")
     )
 st.markdown("#### Nairobi Stock Exchange" )
-fig = px.line_chart(
+fig = px.line(
     data_frame=df, y="price", x="date")
 
 st.write(fig)
@@ -50,7 +50,7 @@ st.write("""
 Stock **closing price** and **volume** of Google!
 """)
 
-tickerSymbol = 'VOD.L'
+tickerSymbol = 'GOOGL'
 
 tickerData = yf.Ticker(tickerSymbol)
 add_date = st.sidebar.date_input("Date")
