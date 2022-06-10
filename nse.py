@@ -25,7 +25,7 @@ df = df[df["ticker"] == add_selectbox]
 
 add_start_date = st.sidebar.date_input("Start Date")
 add_end_date = st.sidebar.date_input("End Date")
-df = df[df["date"] == add_start_date]
+#df = df[df["date"] == add_start_date]
 #df = df[df["date"] == add_end_date]
 
 #with st.sidebar:
