@@ -35,7 +35,7 @@ with st.sidebar:
        ("High", "Medium")
     )
 st.markdown("#### Nairobi Stock Exchange" )
-fig = px.line(
+fig = px.line_chart(
     data_frame=df, y="price", x="date")
 
 st.write(fig)
@@ -44,7 +44,7 @@ st.line_chart(df.price)
 
 
 st.write("""
-# Simple Stock Price Chart
+# Stock Price Chart
 
 
 Stock **closing price** and **volume** of Google!
