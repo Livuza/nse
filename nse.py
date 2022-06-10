@@ -19,7 +19,7 @@ st.set_page_config(
 url=("https://raw.githubusercontent.com/regan-mu/ADS-April-2022/main/Assignments/Assignment%201/data.csv")
 df = pd.read_csv(url)
 add_selectbox = st.sidebar.selectbox("Ticker", pd.unique(df["ticker"]))
-#df = df[df["ticker"] == add_selectbox]
+df = df[df["ticker"] == add_selectbox]
 
 #st.markdown('Data Science is **_really_ cool**.')
 
@@ -39,8 +39,7 @@ fig = px.line(
 
 st.write(fig)
 
-st.line_chart(df.price)
-
+#st.line_chart(df.price)
 
 st.write("""
 # Stock Price Chart
