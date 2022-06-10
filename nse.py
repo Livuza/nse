@@ -24,8 +24,8 @@ add_selectbox = st.sidebar.selectbox("Ticker", pd.unique(df["ticker"]))
 #st.markdown('Data Science is **_really_ cool**.')
 
 add_start_date = st.sidebar.date_input("Start Date")
-#add_end_date = st.sidebar.date_input("End Date")
-df = df[df["date"] == add_start_date]
+add_end_date = st.sidebar.date_input("End Date")
+#df = df[df["date"] == add_start_date]
 #df = df[df["date"] == add_end_date]
 
 #with st.sidebar:
