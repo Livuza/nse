@@ -1,7 +1,7 @@
 from contextlib import closing
 import time
 import streamlit as st
-import matplotlib.pyplot as plt
+from matplotlib import pyplot as plt
 import datetime
 from datetime import datetime, date, time
 import pandas as pd
