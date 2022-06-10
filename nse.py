@@ -7,7 +7,6 @@ from datetime import datetime, date, time
 import pandas as pd
 #import plotly.express as px
 import yfinance as yf
-import yf as yf
 
 st.set_page_config(
     page_title="Nairobi Stock Exchange Market",
