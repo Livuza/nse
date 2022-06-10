@@ -42,6 +42,7 @@ st.write(fig)
 #st.line_chart(df.price)
 
 st.write("""
+# Extras
 # Stock Price Chart
 
 
