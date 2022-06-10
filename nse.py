@@ -53,7 +53,7 @@ Stock **closing price** and **volume** of Google!
 tickerSymbol = 'GOOGL'
 
 tickerData = yf.Ticker(tickerSymbol)
-add_date = st.sidebar.date_input("Date")
+#add_date = st.sidebar.date_input("Date")
 #df = df[df["date"] == add_date]
 tickerDf = tickerData.history(period='id', start='2010-5-31', end='2020-5-31')
 
