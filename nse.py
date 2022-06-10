@@ -1,12 +1,12 @@
 from contextlib import closing
 import time
 import streamlit as st
-#from matplotlib import pyplot as plt
+from matplotlib import pyplot as plt
 import datetime
 from datetime import datetime, date, time
 import pandas as pd
 import numpy as np
-#import plotly.express as px
+import plotly.express as px
 import yfinance as yf
 
 st.set_page_config(
@@ -34,10 +34,10 @@ with st.sidebar:
        ("High", "Medium")
     )
 st.markdown("#### Nairobi Stock Exchange" )
-#fig = px.line(
-   # data_frame=df, y="price", x="date")
+fig = px.line(
+    data_frame=df, y="price", x="date")
 
-#st.write(fig)
+st.write(fig)
 
 st.line_chart(df.date)
 
