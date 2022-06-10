@@ -19,7 +19,7 @@ df = pd.read_csv(url)
 add_selectbox = st.sidebar.selectbox("Ticker", pd.unique(df["ticker"]))
 df = df[df["ticker"] == add_selectbox]
 
-#st.markdown('Data Science is **_really_ cool**.')
+st.markdown('Data Science is **_really_ cool**.')
 
 #add_start_date = st.sidebar.date_input("Start Date")
 #add_end_date = st.sidebar.date_input("End Date")
