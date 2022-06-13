@@ -6,7 +6,7 @@ import datetime
 from datetime import datetime, date, time
 import pandas as pd
 import seaborn as sns
-import numpy as np
+#import numpy as np
 import plotly.express as px
 import yfinance as yf
 
@@ -18,6 +18,7 @@ st.set_page_config(
 )
 url=("https://raw.githubusercontent.com/regan-mu/ADS-April-2022/main/Assignments/Assignment%201/data.csv")
 df = pd.read_csv(url)
+add_name = st.sidebar.subheader("Assignment by:  Charles Livuza")
 add_selectbox = st.sidebar.selectbox("Ticker", pd.unique(df["ticker"]))
 df = df[df["ticker"] == add_selectbox]
 
@@ -25,6 +26,7 @@ df = df[df["ticker"] == add_selectbox]
 
 add_start_date = st.sidebar.date_input("Start Date")
 add_end_date = st.sidebar.date_input("End Date")
+
 #df = df[df["date"] == add_start_date]
 #df = df[df["date"] == add_end_date]
 
@@ -34,17 +36,15 @@ add_end_date = st.sidebar.date_input("End Date")
  #      ("High", "Medium")
  #   )
 st.markdown("#### Nairobi Stock Exchange" )
-fig = px.line(
-    data_frame=df, y="price", x="date")
+st.write("Date range")
 
+fig = px.line(data_frame=df, y="price", x="date")
+#fig.show()
 st.write(fig)
-
 #st.line_chart(df.price)
 
 st.write("""
-# Extras
-# Stock Price Chart
-
+# Stock Prices & Volume
 
 Stock **closing price** and **volume** of Google!
 """)
